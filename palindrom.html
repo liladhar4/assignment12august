@@ -1,0 +1,28 @@
+<html>
+    <head>javscript assignement aug12</head>
+    <body>
+        <script>
+            function palindrom(n){
+                let counter = 0;
+                for(let i=0;i<=50;i++){
+                    let num=i;
+                    let original_no= num;
+                    let rev=0;
+                    while(num!=0){
+                        rev=parseInt(rev*10)+parseInt(num%10);
+                        num=parseInt(num/10);
+                    } 
+                    if(original_no==rev){
+                        document.write(original_no+" Is Palindrom number"+"<br/>");
+                        counter++;
+
+                    }
+                } 
+                document.write("total palindrom number between "+n+" is"+counter);            
+            }
+            palindrom(50);
+            
+      
+        </script>
+    </body>
+</html> 
